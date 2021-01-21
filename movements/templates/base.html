@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Movimientos</title>
+        <title>Movimientos - {% block title %}{% endblock %}</title>
+        <style>
+            header {
+                color: red
+            }
+            
+        </style>
     </head>
     <body>
         <header>
@@ -11,8 +17,8 @@
         </header>
         
         <section>
-            <h1>Lista de movimientos</h1>
-            <p>Aquí va mi lista de movimientos</p>
+            {% block content %}{% endblock %}
+        
         </section>
 
         <footer>
